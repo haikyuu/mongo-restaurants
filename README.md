@@ -15,7 +15,7 @@ Try it on your machine
 Navigate to `/api/01` to see the answer to the question 01.
 
 Exercices:
----
+----
 Here is the list of exercices as seen in [here](http://www.w3resource.com/mongodb-exercises/): (Done = 🌟)
 
 1. Write a MongoDB query to display all the documents in the collection restaurants. 🌟
