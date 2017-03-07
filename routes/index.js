@@ -7,6 +7,7 @@ module.exports = function (app) {
     app.use('/api/05', require('./05'));
     app.use('/api/06', require('./06'));
     app.use('/api/07', require('./07'));
+    app.use('/api/08', require('./08'));
 
     app.get('/', (req, res) => res.json({
         message: 'Welcome to our restaurant API!'
