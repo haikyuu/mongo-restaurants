@@ -6,7 +6,7 @@ achieved a score more than 90.
 displayAll = (req, res)=>{
 
 	const query = restaurant.find(
-		{ borough: 'Bronx', 'grades.score': { $gt: 90 }, }
+		{ 'grades.score': { $gt: 90 }, }
 		,{}
 	)
 	query.exec((err, restaurants)=>{
