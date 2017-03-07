@@ -3,7 +3,7 @@ const restaurant = require('../../models/restaurant')
 Write a MongoDB query to display the first
 5 restaurant which is in the borough Bronx. 
 */
-displayAll = (req, res)=>{
+const queryMiddleware = (req, res)=>{
 
 	const query = restaurant.find(
 		{ borough: 'Bronx', }
@@ -18,5 +18,5 @@ displayAll = (req, res)=>{
 }
 
 module.exports = {
-	displayAll,
+	queryMiddleware,
 }

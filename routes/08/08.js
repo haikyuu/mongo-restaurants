@@ -3,7 +3,7 @@ const restaurant = require('../../models/restaurant')
 Write a MongoDB query to find the restaurants who
 achieved a score more than 90.
 */
-displayAll = (req, res)=>{
+const queryMiddleware = (req, res)=>{
 
 	const query = restaurant.find(
 		{ 'grades.score': { $gt: 90 }, }
@@ -17,5 +17,5 @@ displayAll = (req, res)=>{
 }
 
 module.exports = {
-	displayAll,
+	queryMiddleware,
 }
