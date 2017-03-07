@@ -7,11 +7,7 @@ which contain 'Wil' as first three letters for its name.
 const queryMiddleware = (req, res)=>{
 
 	const query = restaurant.find(
-		{
-				$where: function(){
-					return this.name && this.name.indexOf('Wil') === 0
-				}
-		}
+		{ name: { $regex: /^Wil/} }
 
 		,{ restaurant_id: 1, name: 1, borough: 1, cuisine: 1, _id: 0 }
 	)
