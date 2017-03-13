@@ -16,11 +16,11 @@ Navigate to `/api/01` to see the answer to the question 01.
 
 Exercices:
 ----
-Here is the list of exercices as seen in [here](http://www.w3resource.com/mongodb-exercises/): (Done = 🌟)
+Here is the list of exercices as seen in [here](http://www.w3resource.com/mongodb-exercises/). Done: 18/30
 
-1. Write a MongoDB query to display all the documents in the collection restaurants. 🌟
+1. Write a MongoDB query to display all the documents in the collection restaurants.
 
-2. Write a MongoDB query to display the fields restaurant_id, name, borough and cuisine for all the documents in the collection restaurant. 🌟
+2. Write a MongoDB query to display the fields restaurant_id, name, borough and cuisine for all the documents in the collection restaurant.
 
 3. Write a MongoDB query to display the fields restaurant_id, name, borough and cuisine, but exclude the field _id for all the documents in the collection restaurant. 
 
