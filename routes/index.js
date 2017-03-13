@@ -19,6 +19,7 @@ module.exports = function (app) {
     app.use('/api/17', require('./17'));
     app.use('/api/18', require('./18'));
     app.use('/api/19', require('./19'));
+    app.use('/api/20', require('./20'));
 
     app.get('/', (req, res) => res.json({
         message: 'Welcome to our restaurant API!'
