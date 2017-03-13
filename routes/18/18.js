@@ -7,12 +7,9 @@ to the borough Staten Island or Queens or Bronxor Brooklyn.
 const queryMiddleware = (req, res)=>{
 
 	const query = restaurant.find(
-		{$or:
-			[{ borough: 'Staten Island'}
-			,{borough: 'Queens'}
-			,{borough: 'Bronxor Brooklyn'}
-			]
-		}
+		{ borough: {$in:
+			['Staten Island',  'Queens', 'Bronxor Brooklyn'] 
+		}}
 		,{_id: 1, name: 1, borough: 1, cuisine: 1}
 	)
 	query.exec((err, restaurants)=>{
